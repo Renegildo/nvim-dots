@@ -25,15 +25,15 @@ require("lazy").setup({
       name = "catppuccin",
       priority = 1000,
       config = function()
-        vim.cmd [[colorscheme catppuccin-mocha ]]
-      end
+        vim.cmd [[ colorscheme catppuccin-mocha ]]
+      end,
     },
     {
-      import = "config.plugins"
+      import = "config.plugins",
     },
   },
   change_detection = {
     enabled = false,
-    notify = false
+    notify = false,
   }
 })

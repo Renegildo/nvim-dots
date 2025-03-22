@@ -1,22 +1,22 @@
+
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    build = ":TsUpdate",
+    build = ":TSUpdate",
     config = function()
-      require("lazy").setup({ {
-        "nvim-treesitter/nvim-treesitter",
-        build = ":TSUpdate",
-        config = function()
-          local configs = require("nvim-treesitter.configs")
-
-          configs.setup({
-            ensure_installed = { "c", "lua", "vimdoc", "query", "heex", "javascript", "html", "typescript" },
-            sync_install = false,
-            highlight = { enable = true },
-            indent = { enable = true },
-          })
-        end
-      } })
+      require 'nvim-treesitter.configs'.setup {
+        modules = {},
+        ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "javascript" },
+        sync_install = false,
+        auto_install = true,
+        ignore_install = {},
+        highlight = {
+          enable = true,
+          disable = {},
+          additional_vim_regex_highlighting = false,
+        },
+      }
     end
   }
 }
+

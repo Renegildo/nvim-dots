@@ -6,6 +6,15 @@ return {
       'nvim-lua/plenary.nvim',
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }
     },
+    opts = {
+      defaults = {
+        layout_strategy = "flex",
+        file_ignore_patterns = {
+          "node_modules",
+          ".env",
+        },
+      },
+    },
     config = function()
       vim.keymap.set("n", "<space>sf", function()
         require("telescope.builtin").find_files {}

@@ -1,3 +1,5 @@
+-- this isn't really used in the configuration but it's here just in case.
+
 local state = {
   floating = {
     buf = -1,
@@ -48,8 +50,8 @@ local toggle_terminal = function()
   vim.cmd("normal i")
 end
 
-vim.api.nvim_create_user_command("Floaterminal", toggle_terminal, {})
+-- vim.api.nvim_create_user_command("Floaterminal", toggle_terminal, {})
 
-vim.keymap.set({ "n", "t" }, "<M-3>", toggle_terminal, { noremap = true, silent = true })
+-- vim.keymap.set({ "n", "t" }, "<M-3>", toggle_terminal, { noremap = true, silent = true })
 
-vim.keymap.set("t", "<esc><esc>", "<C-\\><C-n>")
+-- vim.keymap.set("t", "<esc><esc>", "<C-\\><C-n>")

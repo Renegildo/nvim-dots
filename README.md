@@ -29,7 +29,7 @@ Searching any of these online you can find more information about each one.
  - **`tailwind-tools`**: Tailwind stuff for frontend development.
  - **`telescope`**: Many uses, including easy files search.
  - **`treesitter`**: Syntax highlighting and more.
- - **`trouble`**: LSP diagnotisis.
+ - **`trouble`**: LSP diagnosis.
 > The theme being used is [Catppuccin Mocha](https://github.com/catppuccin/nvim).
 ---
 

@@ -55,6 +55,7 @@ vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>")
 -- ---- --
 -- MISC --
 -- ---- --
+vim.keymap.set("n", "<space>h", "<cmd>nohlsearch<CR>")       -- unhighlight search
 vim.keymap.set("n", "<space><space>x", "<cmd> source %<CR>") -- source configuration file
 vim.keymap.set("n", "<space>w", ":w<CR>")                    -- easy shortcut for saving
 vim.api.nvim_create_autocmd("TextYankPost", {                -- highlight text when yaking
